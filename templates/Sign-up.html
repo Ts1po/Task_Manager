@@ -21,11 +21,9 @@
         <div class="Repassword">
             <input type="password" name="repass" id="repass" placeholder="repeat password" class="repassword">
         </div>
-        <!-- <a href="{{ url_for('task') }}"><button type="submit" class="Sign">Sign up</button></a> -->
-        <a href="./task.html"><button type="submit" class="Sign">Sign up</button></a>
-        
-        <!-- <a href="{{ url_for('Sign_in') }}"><button type="button" class="Sign_up">Sign in</button></a> -->
-        <a href="./Sign-in.html"><button type="button" class="Sign_up">Sign in</button></a>
+        <a href="{{ url_for('task') }}"><button type="submit" class="Sign">Sign up</button></a>
+        <a href="{{ url_for('Sign_in') }}"><button type="button" class="Sign_up">Sign in</button></a>
+
       </form>
 
     <script src="../static/js/Sign-up.js"></script>
