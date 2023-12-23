@@ -1,8 +1,5 @@
-/* document.addEventListener("DOMContentLoaded", function() {
-    function signUp(event) {
-        event.preventDefault(); 
-
-        console.log("Button clicked");
+document.addEventListener("DOMContentLoaded", function() {
+    function signUp() {
         var emailInput = document.querySelector(".email input");
         var passwordInput = document.querySelector(".password input");
         var repasswordInput = document.querySelector(".repassword input");
@@ -29,18 +26,11 @@
             return;
         }
 
-        alert("Sign-up successful!");
-        console.log("Sign-up successful!");
-
-        emailInput.value = "";
-        passwordInput.value = "";
-        repasswordInput.value = "";
+        window.location.href = "/Sign_in";
     }
 
-    console.log("Event listener registered for form submit");
-
-    var signUpForm = document.querySelector(".UP");
-    signUpForm.addEventListener("submit", signUp);
+    var signUpButton = document.querySelector(".UP button.Sign");
+    signUpButton.addEventListener("click", signUp);
 
     function validateEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,4 +41,3 @@
         return password.length >= 8;
     }
 });
- */
