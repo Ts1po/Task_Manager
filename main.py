@@ -12,7 +12,7 @@ def Sign_in():
     return render_template("Sign-in.html")
 
 @app.route("/task")
-def taks():
+def task():
     return render_template("task.html")
 
 if __name__ == "__main__":
